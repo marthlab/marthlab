@@ -48,7 +48,21 @@
 </head>
 
 <body id="body">
-
+    <div style="display:none" class="animated bounce" id="notification-bar">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-11 text-center">
+            <center style="font-size:1.2em; font-weight:600">
+              <span class="text-danger">New!</span> gene.iobio: v4.0 has released!  &nbsp;
+              <a href="https://gene.iobio.io/" target="_blank"><button type="button" class="btn btn-outline-danger btn-sm" style="padding:0.25rem 0.75rem"> Get Started</button></a>
+            </center>
+          </div>
+          <div class="col-lg-1 text-center">
+            <i class="material-icons" style="vertical-align: middle; cursor:pointer" onclick="closeNotificationBar()">close</i>
+          </div>
+        </div>
+      </div>
+    </div>
   <!--==========================
     Header
   ============================-->
@@ -180,11 +194,12 @@
 		  <h2><a href="http://iobio.io/" target="_blank">iobio</a></h2>
             <h3>Realtime genomic data visualization and analysis web tools</h3>
             <ul>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://gene.iobio.io" target=_blank>gene.iobio</a> - annotate and prioritize variants</li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://genepanel.iobio.io" target=_blank>genepanel.iobio</a> - generate phenotype-associated gene lists</li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://bam.iobio.io" target=_blank>bam.iobio</a> - alignment quality control </li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://vcf.iobio.io" target=_blank>vcf.iobio</a> - variant calling quality control</li>
-            <li><i class="ion-android-checkmark-circle"></i> <a href="http://oncogene.iobio.io" target=_blank>oncogene.iobio</a> - annotate and track variants in oncology studies</li>
+		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://gene.iobio.io" target=_blank>gene.iobio</a> - interactive visual variant annotation and prioritization</li>
+		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://clin.iobio.io" target=_blank>clin.iobio</a> - comprehensive clinical variant review workflow</li>
+		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://genepanel.iobio.io" target=_blank>genepanel.iobio</a> - phenotype and disorder associated gene lists</li>
+		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://bam.iobio.io" target=_blank>bam.iobio</a> - alignment file quality control </li>
+		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://vcf.iobio.io" target=_blank>vcf.iobio</a> - variant calling file quality control</li>
+            <li><i class="ion-android-checkmark-circle"></i> <a href="http://oncogene.iobio.io" target=_blank>oncogene.iobio</a> - variant annotation and tracking in oncology studies</li>
 			<li><i class="ion-android-checkmark-circle"></i> <a href="https://www.taxonomer.com" target=_blank>taxonomer.iobio</a> - ultra-fast metagenomic analysis</li>
 
             </ul>
@@ -205,9 +220,9 @@
             <h3>K-mer based de novo variant calling</h3>
 
             <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> a direct comparison of k-mers</li>
-                    <li><i class="ion-android-checkmark-circle"></i> no reference bias</li>
-                    <li><i class="ion-android-checkmark-circle"></i> powered to call all variant types and sizes</li>
+                    <li><i class="ion-android-checkmark-circle"></i> direct comparison of k-mers in sequencing reads</li>
+                    <li><i class="ion-android-checkmark-circle"></i> has no reference alignment bias</li>
+                    <li><i class="ion-android-checkmark-circle"></i> is powered to call all variant types and sizes</li>
             </ul>
 
           </div>
@@ -226,9 +241,9 @@
             <h3>Graph-based variant adjudication</h3>
 
             <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> improve germline and somatic variant evidences</li>
-                    <li><i class="ion-android-checkmark-circle"></i> retain true positives, discard false positives</li>
-                    <li><i class="ion-android-checkmark-circle"></i> joint calling on n+1 samples</li>
+                    <li><i class="ion-android-checkmark-circle"></i> improves germline and somatic variant call evidences</li>
+                    <li><i class="ion-android-checkmark-circle"></i> retains true positives, discards false positives</li>
+                    <li><i class="ion-android-checkmark-circle"></i> helps during joint calling on n+1 samples</li>
             </ul>
 
           </div>
@@ -545,7 +560,7 @@
               <div class="pic"><img src="img/team/matt-2.jpg"></div>
               <div class="details">
                 <h4>Matt Velinder</h4>
-		<span>Lab Manager<br>Clinical Genomics Leader / iobio</span>
+		<span>Lab Manager<br>Clinical Genomics Lead / iobio</span>
                 <div class="social">
                   <a href="mailto:matt.velinder@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
                   <a href="https://twitter.com/PubSnips" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -577,7 +592,7 @@
               <div class="pic"><img src="img/team/yi.jpg" alt=""></div>
               <div class="details">
                 <h4>Yi Qiao</h4>
-		<span>Director of Research and Science<br>Precision Oncology Leader / iobio</span>
+		<span>Director of Research and Science<br>Precision Oncology Lead / iobio</span>
                 <div class="social">
                   <a href="mailto:atrusqiao@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
                   <a href="https://twitter.com/yi_q" target="_blank"><i class="fa fa-twitter"></i></a>
