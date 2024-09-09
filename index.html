@@ -1,953 +1,1382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Marth Lab</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <head>
+    <meta charset="utf-8" />
+    <title>Marth Lab</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
-  <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="img/favicon.png" rel="icon" />
+    <link href="img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+      rel="stylesheet"
+    />
 
-  <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
-  <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet" />
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet" />
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162059263-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-162059263-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'UA-162059263-1');
-  </script>
+      gtag("config", "UA-162059263-1");
+    </script>
 
-
-  <!-- =======================================================
+    <!-- =======================================================
     Theme Name: Reveal
     Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
-  ======================================================= -->
-</head>
+    ======================================================= -->
+  </head>
 
-<body id="body">
-    <div style="display:none" class="animated bounce" id="notification-bar">
+  <body id="body">
+    <div style="display: none" class="animated bounce" id="notification-bar">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-11 text-center">
-            <center style="font-size:1.2em; font-weight:600">
-              <span class="text-danger">New!</span> gene.iobio: v4.0 has released!  &nbsp;
-              <a href="https://gene.iobio.io/" target="_blank"><button type="button" class="btn btn-outline-danger btn-sm" style="padding:0.25rem 0.75rem"> Get Started</button></a>
+            <center style="font-size: 1.2em; font-weight: 600">
+              <span class="text-danger">New!</span> gene.iobio: v4.0 has
+              released! &nbsp;
+              <a href="https://gene.iobio.io/" target="_blank"
+                ><button
+                  type="button"
+                  class="btn btn-outline-danger btn-sm"
+                  style="padding: 0.25rem 0.75rem"
+                >
+                  Get Started
+                </button></a
+              >
             </center>
           </div>
           <div class="col-lg-1 text-center">
-            <i class="material-icons" style="vertical-align: middle; cursor:pointer" onclick="closeNotificationBar()">close</i>
+            <i
+              class="material-icons"
+              style="vertical-align: middle; cursor: pointer"
+              onclick="closeNotificationBar()"
+              >close</i
+            >
           </div>
         </div>
       </div>
     </div>
-  <!--==========================
-    Header
-  ============================-->
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-	      <h1><a href="#body" class="scrollto"><span>Marth</span>Lab</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a>-->
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#body">Home</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#software">Software</a></li>
-          <li><a href="#publications">Publications</a></li>
-	  <li><a href="#apply"><b><em>Apply!</em></b></a></p></li>
-          <li><a href="#team">Members</a></li>
-		  <li><a href="#meet-us">Meet Us</a></p></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
-
-  <!--==========================
-    Intro Section
-  ============================-->
-  <section id="intro">
-
-    <div class="intro-content">
-    <h2>Using <span>computational genomics</span> to investigate <span>human disease</span></h2>
-      <div>
-        <a href="#software" class="btn-get-started scrollto">Our Software</a>
-        <a href="#team" class="btn-projects scrollto">Our Team</a>
-      </div>
-    </div>
-
-    <div id="intro-carousel" class="owl-carousel" >
-      <div class="item" style="background-image: url('img/intro-carousel/01.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/02.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/03.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/04.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/05.jpg');"></div>
-      <div class="item" style="background-image: url('img/intro-carousel/06.jpg');"></div>
-      
-    </div>
-
-  </section><!-- #intro -->
-
-  <main id="main">
-
-	   <!--==========================
-      Research Section
-    ============================-->
-    <section id="research">
+    <!--========================== Header ============================-->
+    <header id="header">
       <div class="container">
-        <div class="section-header">
-          <h2>Research</h2>
-	  <p>We develop software tools for genomic data analysis using a combination of biological, statistical, and engineering approaches to accurately detect and interpret inherited and somatic genetic variants. We focus on developing easy-to-use, web-based, visually-driven, interactive and real-time software tools for intuitive analysis of genomic data. Our overall goal is to develop and apply software to better the care and outcomes of patients.</p>
-	</div>
-
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft">
-              <div class="icon"><i class="fa fa-user-md"></i></div>
-	      <h4 class="title">Clinical Genomics</h4>
-             <p class="description">We collaborate with medical geneticists and clinicians across a broad spectrum of human diseases, investigating the genetic etiology of these diseases and potential therapeutic opportunities.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight">
-              <div class="icon"><i class="fa fa-tachometer"></i></div>
-	      <h4 class="title">Precision Oncology</h4>
-              <p class="description">We build and apply methods and visualizations for comprehensive profiling of tumors and their clonal structure across disease progression and therapeutic interventions to directly impact the patient's care.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInLeft" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-file-code-o"></i></div>
-              <h4 class="title">Variant Discovery</h4>
-             <p class="description">Building on our lab's previous work, we continue to develop computational algorithms for variant discovery, including the accurate detection of germline de novo and somatic cancer variants.</p>
-            </div>
-          </div>
-
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight" data-wow-delay="0.2s">
-              <div class="icon"><i class="fa fa-cogs"></i></div>
-              <h4 class="title">Visually-driven Genomics</h4>
-             <p class="description">Our software development approach prioritizes intuitive and interactive visual presentations of complex genomic data, making our software broadly accessible, regardless of computational expertise.</p>
-            </div>
-          </div>
-<!-- not yet
-          <div class="col-lg-6">
-            <div class="box wow fadeInRight">
-              <div class="icon"><i class="fa fa-tachometer"></i></div>
-          <h4 class="title">Single Cell Genomics</h4>
-              <p class="description">We build and apply methods and visualizations for comprehensive profiling of tumors and their clonal structure across disease progression to directly impact the patient's care.</p>
-            </div>
-          </div>
--->
-
+        <div id="logo" class="pull-left">
+          <h1>
+            <a href="#body" class="scrollto"><span>Marth</span>Lab</a>
+          </h1>
         </div>
 
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li class="menu-active"><a href="#body">Home</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li>
+              <a href="#apply"
+                ><b><em>Apply!</em></b></a
+              >
+            </li>
+            <li><a href="#team">Members</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
-    </section><!-- #research -->
+    </header>
 
-
-    <!--==========================
-      Software Section
-    ============================-->
-    <section id="software" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Software</h2>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="http://iobio.io/" target="_blank"><img src="img/software/iobio.jpg" alt=""></a>
-          </div>
-
-          <div class="content">
-		  <h2><a href="http://iobio.io/" target="_blank">iobio</a></h2>
-            <h3>Realtime genomic data visualization and analysis web tools</h3>
-            <ul>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://gene.iobio.io" target=_blank>gene.iobio</a> - interactive visual variant annotation and prioritization</li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://clin.iobio.io" target=_blank>clin.iobio</a> - comprehensive clinical variant review workflow</li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://genepanel.iobio.io" target=_blank>genepanel.iobio</a> - phenotype and disorder associated gene lists</li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://bam.iobio.io" target=_blank>bam.iobio</a> - alignment file quality control </li>
-		    <li><i class="ion-android-checkmark-circle"></i> <a href="http://vcf.iobio.io" target=_blank>vcf.iobio</a> - variant calling file quality control</li>
-            <li><i class="ion-android-checkmark-circle"></i> <a href="http://oncogene.iobio.io" target=_blank>oncogene.iobio</a> - variant annotation and tracking in oncology studies</li>
-			<li><i class="ion-android-checkmark-circle"></i> <a href="https://www.taxonomer.com" target=_blank>taxonomer.iobio</a> - ultra-fast metagenomic analysis</li>
-
-            </ul>
-
-          </div>
-        </div>
-
-      </div>
-
-            <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/jandrewrfarrell/RUFUS" target="_blank"><img src="img/software/terminal.png" alt=""></a>
-          </div>
-
-          <div class="content">
-	  <h2><a href="https://github.com/jandrewrfarrell/RUFUS" target="_blank">RUFUS</a></h2>
-            <h3>K-mer based de novo variant calling</h3>
-
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> direct comparison of k-mers in sequencing reads</li>
-                    <li><i class="ion-android-checkmark-circle"></i> has no reference alignment bias</li>
-                    <li><i class="ion-android-checkmark-circle"></i> is powered to call all variant types and sizes</li>
-            </ul>
-
-          </div>
-        </div>
-	      </div>
-
-
-	            <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/dillonl/graphite" target="_blank"><img src="img/software/graphite.png" alt=""></a>
-          </div>
-
-          <div class="content">
-	  <h2><a href="https://github.com/dillonl/graphite" target="_blank">Graphite</a></h2>
-            <h3>Graph-based variant adjudication</h3>
-
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> improves germline and somatic variant call evidences</li>
-                    <li><i class="ion-android-checkmark-circle"></i> retains true positives, discards false positives</li>
-                    <li><i class="ion-android-checkmark-circle"></i> helps during joint calling on n+1 samples</li>
-            </ul>
-
-          </div>
-        </div>
-	      </div>
-
-
-                <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/ekg/freebayes" target="_blank"><img src="img/software/freebayes.png" alt=""></a>
-          </div>
-
-          <div class="content">
-      <h2><a href="https://github.com/ekg/freebayes" target="_blank">freebayes</a></h2>
-            <h3>Bayesian haplotype-based variant calling</h3>
-<!--
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> point1</li>
-                    </li><i class="ion-android-checkmark-circle"></i> point2</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point3</li>
-            </ul>
--->
-          </div>
+    <!--========================== Intro Section ============================-->
+    <section id="intro">
+      <div class="intro-content">
+        <h2>
+          Using <span>computational genomics</span> to investigate
+          <span>human disease</span>
+        </h2>
+        <div>
+          <a href="#software" class="btn-get-started scrollto">Our Software</a>
+          <a href="#team" class="btn-projects scrollto">Our Team</a>
         </div>
       </div>
 
-
-                <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/yiq/SubcloneSeeker" target="_blank"><img src="img/software/superseeker.png" alt=""></a>
-          </div>
-
-          <div class="content">
-		  <h2><a href="https://github.com/yiq/SubcloneSeeker" target="_blank">superseeker</a></h2>
-            <h3>Computational reconstruction of tumor clones</h3>
-<!--
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> point1</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point2</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point3</li>
-            </ul>
--->
-          </div>
-        </div>
+      <div id="intro-carousel" class="owl-carousel">
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/01.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/02.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/03.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/04.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/05.jpg')"
+        ></div>
+        <div
+          class="item"
+          style="background-image: url('img/intro-carousel/06.jpg')"
+        ></div>
       </div>
+    </section>
 
-
-            <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-                  <a href="https://github.com/dillonl/bAyesCMG" target="_blank"><img src="img/software/bayescmg.png" alt=""></a>
+    <main id="main">
+      <!--========================== Research Section ============================-->
+      <section id="research">
+        <div class="container">
+          <div class="section-header">
+            <h2>Research</h2>
+            <p>
+              We develop software tools for genomic data analysis using a
+              combination of biological, statistical, and engineering approaches
+              to accurately detect and interpret inherited and somatic genetic
+              variants. We focus on developing easy-to-use, web-based,
+              visually-driven, interactive and real-time software tools for
+              intuitive analysis of genomic data. Our overall goal is to develop
+              and apply software to better the care and outcomes of patients.
+            </p>
           </div>
 
-          <div class="content">
-          <h2><a href="https://github.com/dillonl/bAyesCMG" target="_blank">bayescmg</a></h2>
-            <h3>An applied Bayesian framework for the ACMG/AMP criteria</h3>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft">
+                <div class="icon"><i class="fa fa-user-md"></i></div>
+                <h4 class="title">Clinical Genomics</h4>
+                <p class="description">
+                  We collaborate with medical geneticists and clinicians across
+                  a broad spectrum of human diseases, investigating the genetic
+                  etiology of these diseases and potential therapeutic
+                  opportunities.
+                </p>
+              </div>
+            </div>
 
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> automatically applies ACMG criteria to vcf records</li>
-                    <li><i class="ion-android-checkmark-circle"></i> calculates a simple pathogencity probability</li>
-                    <li><i class="ion-android-checkmark-circle"></i> filters and prioritizes variants</li>
-            </ul>
+            <div class="col-lg-6">
+              <div class="box wow fadeInRight">
+                <div class="icon"><i class="fa fa-tachometer"></i></div>
+                <h4 class="title">Precision Oncology</h4>
+                <p class="description">
+                  We build and apply methods and visualizations for
+                  comprehensive profiling of tumors and their clonal structure
+                  across disease progression and therapeutic interventions to
+                  directly impact the patient's care.
+                </p>
+              </div>
+            </div>
 
+            <div class="col-lg-6">
+              <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="icon"><i class="fa fa-file-code-o"></i></div>
+                <h4 class="title">Variant Discovery</h4>
+                <p class="description">
+                  Building on our lab's previous work, we continue to develop
+                  computational algorithms for variant discovery, including the
+                  accurate detection of germline de novo and somatic cancer
+                  variants.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="box wow fadeInRight" data-wow-delay="0.2s">
+                <div class="icon"><i class="fa fa-cogs"></i></div>
+                <h4 class="title">Visually-driven Genomics</h4>
+                <p class="description">
+                  Our software development approach prioritizes intuitive and
+                  interactive visual presentations of complex genomic data,
+                  making our software broadly accessible, regardless of
+                  computational expertise.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-              </div>
+      </section>
 
-
-            <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-                  <a href="https://github.com/mvelinder/ped_draw" target="_blank"><img src="img/software/ped_draw.png" alt=""></a>
+      <!--========================== Software Section ============================-->
+      <section id="software" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Software</h2>
           </div>
 
-          <div class="content">
-          <h2><a href="https://github.com/mvelinder/ped_draw" target="_blank">ped_draw</a></h2>
-            <h3>Pedigree drawing with ease</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="http://iobio.io/" target="_blank"
+                  ><img src="img/software/iobio.jpg" alt=""
+                /></a>
+              </div>
 
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> quick and easy pedigree visualization</li>
-                    <li><i class="ion-android-checkmark-circle"></i> simple one-liner syntax</li>
-                    <li><i class="ion-android-checkmark-circle"></i> no dependencies</li>
-            </ul>
+              <div class="content">
+                <h2><a href="http://iobio.io/" target="_blank">iobio</a></h2>
+                <h3>
+                  Realtime genomic data visualization and analysis web tools
+                </h3>
+                <ul>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://gene.iobio.io" target="_blank"
+                      >gene.iobio</a
+                    >
+                    - interactive visual variant annotation and prioritization
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://clin.iobio.io" target="_blank"
+                      >clin.iobio</a
+                    >
+                    - comprehensive clinical variant review workflow
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://genepanel.iobio.io" target="_blank"
+                      >genepanel.iobio</a
+                    >
+                    - phenotype and disorder associated gene lists
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://bam.iobio.io" target="_blank">bam.iobio</a>
+                    - alignment file quality control
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://vcf.iobio.io" target="_blank">vcf.iobio</a>
+                    - variant calling file quality control
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="http://oncogene.iobio.io" target="_blank"
+                      >oncogene.iobio</a
+                    >
+                    - variant annotation and tracking in oncology studies
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i>
+                    <a href="https://www.taxonomer.com" target="_blank"
+                      >taxonomer.iobio</a
+                    >
+                    - ultra-fast metagenomic analysis
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          </div>    
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a
+                  href="https://github.com/marthlab/RUFUS"
+                  target="_blank"
+                  ><img src="img/software/terminal.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a
+                    href="https://github.com/marthlab/RUFUS"
+                    target="_blank"
+                    >RUFUS</a
+                  >
+                </h2>
+                <h3>K-mer based de novo variant calling</h3>
+
+                <ul>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> direct
+                    comparison of k-mers in sequencing reads
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> has no
+                    reference alignment bias
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> is powered to
+                    call all variant types and sizes
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/dillonl/graphite" target="_blank"
+                  ><img src="img/software/graphite.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a href="https://github.com/dillonl/graphite" target="_blank"
+                    >Graphite</a
+                  >
+                </h2>
+                <h3>Graph-based variant adjudication</h3>
+
+                <ul>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> improves
+                    germline and somatic variant call evidences
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> retains true
+                    positives, discards false positives
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> helps during
+                    joint calling on n+1 samples
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/ekg/freebayes" target="_blank"
+                  ><img src="img/software/freebayes.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a href="https://github.com/ekg/freebayes" target="_blank"
+                    >freebayes</a
+                  >
+                </h2>
+                <h3>Bayesian haplotype-based variant calling</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/yiq/SubcloneSeeker" target="_blank"
+                  ><img src="img/software/superseeker.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a
+                    href="https://github.com/yiq/SubcloneSeeker"
+                    target="_blank"
+                    >superseeker</a
+                  >
+                </h2>
+                <h3>Computational reconstruction of tumor clones</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/dillonl/bAyesCMG" target="_blank"
+                  ><img src="img/software/bayescmg.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a href="https://github.com/dillonl/bAyesCMG" target="_blank"
+                    >bayescmg</a
+                  >
+                </h2>
+                <h3>An applied Bayesian framework for the ACMG/AMP criteria</h3>
+
+                <ul>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> automatically
+                    applies ACMG criteria to vcf records
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> calculates a
+                    simple pathogencity probability
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> filters and
+                    prioritizes variants
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/mvelinder/ped_draw" target="_blank"
+                  ><img src="img/software/ped_draw.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a
+                    href="https://github.com/mvelinder/ped_draw"
+                    target="_blank"
+                    >ped_draw</a
+                  >
+                </h2>
+                <h3>Pedigree drawing with ease</h3>
+                <ul>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> quick and easy
+                    pedigree visualization
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> simple
+                    one-liner syntax
+                  </li>
+                  <li>
+                    <i class="ion-android-checkmark-circle"></i> no dependencies
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a
+                  href="https://github.com/pezmaster31/bamtools"
+                  target="_blank"
+                  ><img src="img/software/bamtools.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a
+                    href="https://github.com/pezmaster31/bamtools"
+                    target="_blank"
+                    >bamtools</a
+                  >
+                </h2>
+                <h3>
+                  C++ API & command-line toolkit for working with BAM data
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 about-img">
+                <a href="https://github.com/jiantao/Tangram" target="_blank"
+                  ><img src="img/software/tangram.png" alt=""
+                /></a>
+              </div>
+
+              <div class="content">
+                <h2>
+                  <a href="https://github.com/jiantao/Tangram" target="_blank"
+                    >Tangram</a
+                  >
+                </h2>
+                <h3>Fast structural variation detection toolbox</h3>
+              </div>
+            </div>
+          </div>
         </div>
-              </div>
+      </section>
 
-
-                <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/pezmaster31/bamtools" target="_blank"><img src="img/software/bamtools.png" alt=""></a>
+      <!--========================== Publications Section ============================-->
+      <section id="publications" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Publications</h2>
+            <p>
+              Some of our recent and featured publications are shown below, but
+              you can find all of our publications on
+              <a
+                href="https://www.ncbi.nlm.nih.gov/pubmed?term=(Marth%2C%20Gabor%5BAuthor%5D)%20OR%20Marth%2C%20Gabor%20T%5BAuthor%5D"
+                target="_blank"
+                >PubMed</a
+              >
+              and
+              <a
+                href="https://scholar.google.com/citations?user=9XnituQAAAAJ&hl=en&oi=ao"
+                target="_blank"
+                >Google Scholar</a
+              >
+            </p>
           </div>
-
-          <div class="content">
-      <h2><a href="https://github.com/pezmaster31/bamtools" target="_blank">bamtools</a></h2>
-            <h3>C++ API & command-line toolkit for working with BAM data</h3>
-<!--
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> point1</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point2</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point3</li>
-            </ul>
--->
-          </div>
-        </div>
-      </div>
-
-
-                <div class="container">
-        <div class="row">
-          <div class="col-lg-6 about-img">
-		  <a href="https://github.com/jiantao/Tangram" target="_blank"><img src="img/software/tangram.png" alt=""></a>
-          </div>
-
-          <div class="content">
-      <h2><a href="https://github.com/jiantao/Tangram" target="_blank">Tangram</a></h2>
-            <h3>Fast structural variation detection toolbox</h3>
-<!--
-            <ul>
-                    <li><i class="ion-android-checkmark-circle"></i> point1</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point2</li>
-                    <li><i class="ion-android-checkmark-circle"></i> point3</li>
-            </ul>
--->
-          </div>
-        </div>
-
-
-      </div>
-
-      </div>
-
-    </section><!-- #software -->
-
-    <!--==========================
-      Clients Section
-    <section id="clients" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Clients</h2>
-          <p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export irure minim illum fore</p>
-        </div>
-
-        <div class="owl-carousel clients-carousel">
-          <img src="img/clients/client-1.png" alt="">
-          <img src="img/clients/client-2.png" alt="">
-          <img src="img/clients/client-3.png" alt="">
-          <img src="img/clients/client-4.png" alt="">
-          <img src="img/clients/client-5.png" alt="">
-          <img src="img/clients/client-6.png" alt="">
-          <img src="img/clients/client-7.png" alt="">
-          <img src="img/clients/client-8.png" alt="">
-        </div>
-
-      </div>
-    </section><
--->
-    <!--==========================
-      Publications Section
-    ============================-->
-    <section id="publications" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Publications</h2>
-        <p>Some of our recent and featured publications are shown below, but you can find all of our publications on <a href="https://www.ncbi.nlm.nih.gov/pubmed?term=(Marth%2C%20Gabor%5BAuthor%5D)%20OR%20Marth%2C%20Gabor%20T%5BAuthor%5D" target="_blank">PubMed</a> and <a href="https://scholar.google.com/citations?user=9XnituQAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></p>
-	</div>
-      </div>
-
-      <div class="container-fluid">
-        <div class="row no-gutters">
-
-     <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.mdpi.com/2075-4426/12/1/73/htm" target="_blank">
-                <img src="img/publications/15.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-     <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/s41598-021-99752-5" target="_blank">
-                <img src="img/publications/14.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-019-0641-1" target="_blank">
-                <img src="img/publications/13.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/s41467-018-08148-z" target="_blank">
-                <img src="img/publications/1.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-	  <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://science.sciencemag.org/content/362/6420/eaat6576.long" target="_blank">
-                <img src="img/publications/3.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/s41525-018-0061-8" target="_blank">
-                <img src="img/publications/5.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/rapid-clinical-diagnostic-variant-investigation-of-genomic-patient-sequencing-data-with-iobio-web-tools/D424B12E65FBECCB8D001B42C971D6E9#" target="_blank">
-                <img src="img/publications/7.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/s41588-018-0107-y" target="_blank">
-                <img src="img/publications/8.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/nmeth.3174" target="_blank">
-                <img src="img/publications/9.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-2">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://academic.oup.com/bioinformatics/article/25/16/2078/204688" target="_blank">
-                <img src="img/publications/10.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4 pr-3 pb-3">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/ng1299_452" target="_blank">
-                <img src="img/publications/12.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-
-           <div class="col-lg-3 col-md-4 pb-2">
-            <div class="publications-item wow fadeInUp">
-              <a href="https://www.nature.com/articles/nature11632" target="_blank">
-                <img src="img/publications/11.png" alt="">
-                <div class="publications-overlay">
-                  <div class="publications-info"><h2 class="wow fadeInUp"> </h2></div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- #publications -->
-
-        <!--==========================
-      Apply Section
-    ============================-->
-    <section id="apply" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-       <h3 class="apply-title">Apply!</h3>
-       <p class="apply-text">We are always looking for talented and motivated people to join our team! We are currently looking for post-docs with an emphasis in biostatistics and mathematics, as well as graduate students through the <a href="https://www.bioscience.utah.edu/" target="_blank">Utah Bioscience PhD</a> and <a href="https://medicine.utah.edu/students/programs/other/combined/md-phd/" target="_blank">MD/PhD programs</a>. <a href="mailto:marthlabutah@gmail.com" target="_blank">Email us</a> or check our current <a href="https://employment.utah.edu/jobs/?q=gabor+marth" target="_blank">job postings</a>!<br><br>
-        </div>
-          <div class="col-lg-3 apply-btn-container text-center">
-            <a class="apply-btn align-middle" target="_blank" href="https://employment.utah.edu/jobs/?q=gabor+marth">Current Postings</a></div>
-        </div>
-      </div>
-    </section><!-- #apply-->
-
-
-    <!--==========================
-      Our Team Section
-    ============================-->
-    <section id="team" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Members</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/gabor.jpg"></div>
-              <div class="details">
-                <h4>Gabor Marth</h4>
-		<span>Principle Investigator<br>Professor of Human Genetics</span>
-                <div class="social">
-                  <a href="mailto:gabor.marth@gmail.com"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/marthgabor"><i class="fa fa-twitter"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/matt-2.jpg"></div>
-              <div class="details">
-                <h4>Matt Velinder</h4>
-		<span>Lab Manager<br>Clinical Genomics Lead / iobio</span>
-                <div class="social">
-                  <a href="mailto:matt.velinder@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/PubSnips" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/mvelinder" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/matt-velinder-phd-79360965/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/al2.png"></div>
-              <div class="details">
-                <h4>Alistair Ward</h4>
-		<span>Director of Research and Science <br>CEO, Co-Founder Frameshift Genomics</span>
-                <div class="social">
-                  <a href="mailto:alistairnward@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/AlistairNWard" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/AlistairNWard" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/alistair-ward-1856758/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/yi.jpg" alt=""></div>
-              <div class="details">
-                <h4>Yi Qiao</h4>
-		<span>Director of Research and Science<br>Precision Oncology Lead / iobio</span>
-                <div class="social">
-                  <a href="mailto:atrusqiao@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/yi_q" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/yiq" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/yi-qiao-b9153928/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/andrew.png" alt=""></div>
-              <div class="details">
-                <h4>Andrew Farrell</h4>
-                <span>Research Associate<br>RUFUS Developer</span>
-                <div class="social">
-                  <a href="mailto:jandrewrfarrell@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://github.com/jandrewrfarrell" target="_blank"><i class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/tony.jpg" alt=""></div>
-              <div class="details">
-                <h4>Tony DiSera</h4>
-                <span>Senior Software Developer<br>Clinical Genomics / iobio </span>
-                <div class="social">
-                  <a href="mailto:tony.disera@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/tony_disera" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/tonydisera" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/tony-di-sera-26872063/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/xiaomeng.jpg" alt=""></div>
-              <div class="details">
-                <h4>Xiaomeng Huang</h4>
-                <span>Assoc. Dir. of Research and Science<br>Precision Oncology</span>
-                <div class="social">
-                  <a href="mailto:xm01.huang@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://github.com/xiaomengh/" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/xiaomeng-huang-a3854228/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/stephanie.png" alt=""></div>
-              <div class="details">
-                <h4>Stephanie Georges</h4>
-                <span>Software Developer<br>Precision Oncology / iobio</span>
-                <div class="social">
-                  <a href="mailto:sjeangeo@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://github.com/stefinfection" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/stephanie-georges-19388784/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/anders.jpg" alt=""></div>
-              <div class="details">
-                <h4>Anders Pitman</h4>
-                <span>Software and Backend Developer<br>iobio</span>
-                <div class="social">
-                  <a href="mailto:anders@anderspitman.net" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/anderspitman" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/anderspitman" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/anderspitman/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/szabi.jpg" alt=""></div>
-              <div class="details">
-                <h4>Szabolcs Tarapcsak</h4>
-                <span>Postdoctoral Fellow<br>Precision Oncology</span>
-                <div class="social">
-                  <a href="mailto:tarapcsakszabolcs@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://www.linkedin.com/in/szabolcs-tarapcs%C3%A1k-0aa606bb/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/niki.png" alt=""></div>
-              <div class="details">
-                <h4>Niki Williams</h4>
-		<span>PhD Student<br>Somatic Mosaicism in Haematopoiesis</span>
-                <div class="social">
-                  <a href="mailto:u1261876@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-		  <a href="https://www.linkedin.com/in/nikola-williams-724b3018b" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-	   <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/john.png" alt=""></div>
-              <div class="details">
-                <h4>John Chamberlin</h4>
-                <span>DBMI PhD Student<br>Single-Cell Bioinformatics</span>
-                <div class="social">
-                  <a href="mailto:john.chamberlin@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-		  <a href="https://github.com/johnchamberlin" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/john-chamberlin-19a681155/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-	  <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/gage.png" alt=""></div>
-              <div class="details">
-                <h4>Gage Black</h4>
-                <span>PhD Student<br>Precision Oncology</span>
-                <div class="social">
-                  <a href="mailto:john.chamberlin@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="https://twitter.com/gageblack_" target="_blank"><i class="fa fa-twitter"></i></a>
-                  <a href="https://github.com/gageblack" target="_blank"><i class="fa fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/gage-black/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/isabelle.png" alt=""></div>
-              <div class="details">
-                <h4>Isabelle Cooperstein</h4>
-                <span>PhD Student<br>Genotype:Phenotype Correlations</span>
-                <div class="social">
-                  <a href="mailto:u6013141@utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-                  <a href="http://linkedin.com/in/isabelle-cooperstein-107a65183" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="pic"><img src="img/team/nancy.jpg" alt=""></div>
-              <div class="details">
-                <h4>Nancy Benson</h4>
-		<span>Administrative Manager<br>Department of Human Genetics</span>
-                <div class="social">
-                  <a href="mailto:nbenson@genetics.utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-	</div>
-	</div>
-
-      <div class="container">
-        <div class="section-header">
-          <h2>Lab Alumni</h2>
-	</div>
-
-        <div class="row">
-
-        <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="details">
-                <h4>Corin Thummel</h4>
-		<span>Business Data Analyst<br>FLSmidth & Co.</span>
-              </div>
-            </div>
         </div>
 
-
-           <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="details">
-                <h4>Matthew Bailey</h4>
-                <span>Assistant Professor<br>Brigham Young University</span>
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.mdpi.com/2075-4426/12/1/73/htm"
+                  target="_blank"
+                >
+                  <img src="img/publications/15.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-        </div>
 
-           <div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="details">
-                <h4>Preetida Bhetariya</h4>
-                <span>Bioinformatics Analyst / RA<br>Harvard School of Public Health</span>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/s41598-021-99752-5"
+                  target="_blank"
+                >
+                  <img src="img/publications/14.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-        </div>
 
-	<div class="col-lg-3 col-md-6">
-            <div class="member">
-              <div class="details">
-                <h4>Erik Garrison</h4>
-		<span>Postdoctoral Research Fellow<br>University of California, Santa Cruz</span>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://bmcmedgenomics.biomedcentral.com/articles/10.1186/s12920-019-0641-1"
+                  target="_blank"
+                >
+                  <img src="img/publications/13.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
               </div>
             </div>
-	</div>
 
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/s41467-018-08148-z"
+                  target="_blank"
+                >
+                  <img src="img/publications/1.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-	</div>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://science.sciencemag.org/content/362/6420/eaat6576.long"
+                  target="_blank"
+                >
+                  <img src="img/publications/3.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-    </section><!-- #team -->
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/s41525-018-0061-8"
+                  target="_blank"
+                >
+                  <img src="img/publications/5.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-        <!--==========================
-      Meet Us Section
-    ============================-->
-    <section id="meet-us" class="wow fadeInUp">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-left">
-		  <h3 class="meet-us-title">Meet Us!</h3><br>
-	    <p class="meet-us-text"><strong>We regularly attend meetings and conferences. In the coming months you can find us at: </strong><br><br>
-                        <a href="https://www.acmgmeeting.net/" target="_blank">American College of Medical Genetics (ACMG) Annual Clinical Genetics Meeting, Virtual, April 13-16 2021</a><br>
-			- Poster #eP161: "bAyesCMG: a high throughput computational tool for applying ACMG/AMP criteria and generating Bayesian pathogenicity probabilities"
-			<br><br>
-			<a href="https://meetings.cshl.edu/meetings.aspx?meet=GENOME&year=21" target="_blank">Cold Spring Harbor Laboratory (CSHL) Biology of Genomes, Virtual, May 11-14 2021</a><br><br>
-          </div>
-          <div class="col-lg-3 meet-us-btn-container text-center">
-<a class="meet-us-btn align-middle" target="_blank" href="https://twitter.com/intent/tweet?button_hashtag=MarthLab&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #MarthLab</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/rapid-clinical-diagnostic-variant-investigation-of-genomic-patient-sequencing-data-with-iobio-web-tools/D424B12E65FBECCB8D001B42C971D6E9#"
+                  target="_blank"
+                >
+                  <img src="img/publications/7.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-      </div>
-    </section><!-- #meet-us-->
+            <div class="col-lg-3 col-md-4 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/s41588-018-0107-y"
+                  target="_blank"
+                >
+                  <img src="img/publications/8.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-    <!--==========================
-      Contact Section
-    ============================-->
-    <section id="contact" class="wow fadeInUp">
-      <div class="container">
-        <div class="section-header">
-          <h2>Contact</h2>
-	  <p>Our lab is part of the Utah Center for Genetic Discovery (UCGD) and the Department of Human Genetics at the University of Utah</p>
-	</div>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/nmeth.3174"
+                  target="_blank"
+                >
+                  <img src="img/publications/9.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-        <div class="row contact-info">
+            <div class="col-lg-3 col-md-4 pr-3 pb-2">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://academic.oup.com/bioinformatics/article/25/16/2078/204688"
+                  target="_blank"
+                >
+                  <img src="img/publications/10.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
 
-          <div class="col-md-4">
-            <div class="contact-address">
-              <i class="ion-ios-location-outline"></i>
-              <h3>Address</h3>
-              <address>15 N 2030 E, Salt Lake City, UT</address>
+            <div class="col-lg-3 col-md-4 pr-3 pb-3">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/ng1299_452"
+                  target="_blank"
+                >
+                  <img src="img/publications/12.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 pb-2">
+              <div class="publications-item wow fadeInUp">
+                <a
+                  href="https://www.nature.com/articles/nature11632"
+                  target="_blank"
+                >
+                  <img src="img/publications/11.png" alt="" />
+                  <div class="publications-overlay">
+                    <div class="publications-info">
+                      <h2 class="wow fadeInUp"></h2>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-
-           <div class="col-md-4">
-            <div class="contact-phone">
-              <i class="ion-ios-telephone-outline"></i>
-              <h3>Phone Number</h3>
-              <p><a href="tel:+155895548855">(801) 581-4422</a></p>
-            </div>
-          </div>
-
-          <div class="col-md-4">
-            <div class="contact-email">
-              <i class="ion-ios-email-outline"></i>
-              <h3>Email</h3>
-              <p><a href="mailto:marthlabutah@gmail.com">marthlabutah@gmail.com</a></p>
-            </div>
-          </div>
-
         </div>
-      </div>
+      </section>
 
-      <div class="container mb-4">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.552533322238!2d-111.8339884!3d40.7699831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc9ef33656b15944!2sUniversity+Of+Utah+Department+-Human+Genetics!5e0!3m2!1sen!2sus!4v1564591285367!5m2!1sen!2sus" width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
+      <!--========================== Apply Section ============================-->
+      <section id="apply" class="wow fadeInUp">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 text-center text-lg-left">
+              <h3 class="apply-title">Apply!</h3>
+              <p class="apply-text">
+                We are always looking for talented and motivated people to join
+                our team! We are currently looking for post-docs with an
+                emphasis in biostatistics and mathematics, as well as graduate
+                students through the
+                <a href="https://www.bioscience.utah.edu/" target="_blank"
+                  >Utah Bioscience PhD</a
+                >
+                and
+                <a
+                  href="https://medicine.utah.edu/students/programs/other/combined/md-phd/"
+                  target="_blank"
+                  >MD/PhD programs</a
+                >.
+                <a href="mailto:marthlabutah@gmail.com" target="_blank"
+                  >Email us</a
+                >
+                or check our current
+                <a
+                  href="https://employment.utah.edu/jobs/?q=gabor+marth"
+                  target="_blank"
+                  >job postings</a
+                >! <br /><br />
+              </p>
+            </div>
 
-      </div>
-    </section><!-- #contact -->
+            <div class="col-lg-3 apply-btn-container text-center">
+              <a
+                class="apply-btn align-middle"
+                target="_blank"
+                href="https://employment.utah.edu/jobs/?q=gabor+marth"
+                >Current Postings</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
 
-  </main>
+      <!--========================== Our Team Section ============================-->
+      <section id="team" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2>Members</h2>
+          </div>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/gabor.jpg" /></div>
+                <div class="details">
+                  <h4>Gabor Marth</h4>
+                  <span
+                    >Principle Investigator<br />Professor of Human
+                    Genetics</span
+                  >
+                  <div class="social">
+                    <a href="mailto:gabor.marth@gmail.com"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://twitter.com/marthgabor"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery/jquery-migrate.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="lib/easing/easing.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
-  <script src="lib/sticky/sticky.js"></script>
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/al2.png" /></div>
+                <div class="details">
+                  <h4>Alistair Ward</h4>
+                  <span
+                    >Director of Research and Science <br />CEO, Co-Founder
+                    Frameshift Genomics</span
+                  >
+                  <div class="social">
+                    <a href="mailto:alistairnward@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://twitter.com/AlistairNWard" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="https://github.com/AlistairNWard" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/alistair-ward-1856758/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic">
+                  <img src="img/team/xiaomeng.jpg" alt="" />
+                </div>
+                <div class="details">
+                  <h4>Xiaomeng Huang</h4>
+                  <span
+                    >Assoc. Dir. of Research and Science<br />Precision
+                    Oncology</span
+                  >
+                  <div class="social">
+                    <a href="mailto:xm01.huang@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/xiaomengh/" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/xiaomeng-huang-a3854228/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-  <!-- Template Main Javascript File -->
-  <script src="js/main.js"></script>
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic">
+                  <img src="img/team/isabelle.png" alt="" />
+                </div>
+                <div class="details">
+                  <h4>Isabelle Cooperstein</h4>
+                  <span>PhD Student<br />Genotype:Phenotype Correlations</span>
+                  <div class="social">
+                    <a href="mailto:u6013141@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a
+                      href="http://linkedin.com/in/isabelle-cooperstein-107a65183"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-</body>
+            <div class="col-lg-3 col-md-6">
+                <div class="member">
+                    <div class="pic"><img src="img/team/casey.png" alt="" /></div>
+                    <div class="details">
+                        <h4>Casey Sederman</h4>
+                        <span>MD/PHD Student<br />ML / Precision
+                            Oncology</span>
+                        <div class="social">
+                            <a href="mailto:casey.sederman@hsc.utah.edu" target="_blank"><i class="fa fa-envelope"></i></a>
+                            <a href="https://github.com/csederman" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic">
+                  <img src="img/team/stephanie_g.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <h4>Stephanie Gardiner</h4>
+                  <span>PhD Student<br />Somatic Mosaicism</span>
+                  <div class="social">
+                    <a href="mailto:stephanie.gardiner@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/sgardiner01" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/stephanie-gardiner/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- PENDING REMAINING INFORMATION -->
+            <!-- <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="" alt="" /></div>
+                <div class="details">
+                  <h4>Patrick Ozark</h4>
+                  <span
+                    >MD/PhD Student<br />ML / Precision
+                    Oncology</span
+                  >
+                  <div class="social">
+                    <a href="mailto:" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="" target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+            
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/taeho.jpg" alt="" /></div>
+                <div class="details">
+                  <h4>Taeho Kim</h4>
+                  <span
+                    >PhD Student<br />ML / Precision
+                    Oncology</span
+                  >
+                  <div class="social">
+                    <a href="mailto:taeho.kim@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://www.linkedin.com/in/taehokim7utusk/ " target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/tony.jpg" alt="" /></div>
+                <div class="details">
+                  <h4>Tony DiSera</h4>
+                  <span
+                    >Senior Software Developer<br />Clinical Genomics / iobio
+                  </span>
+                  <div class="social">
+                    <a href="mailto:tony.disera@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://twitter.com/tony_disera" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="https://github.com/tonydisera" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/tony-di-sera-26872063/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic">
+                  <img src="img/team/steph.jpeg" alt="" />
+                </div>
+                <div class="details">
+                  <h4>Stephanie Georges</h4>
+                  <span
+                    >Principal Software Engineer<br />Variant Calling Algorithms / iobio</span
+                  >
+                  <div class="social">
+                    <a href="mailto:sjeangeo@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/stefinfection" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/stephanie-georges-19388784/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/anders.jpg" alt="" /></div>
+                <div class="details">
+                  <h4>Anders Pitman</h4>
+                  <span>Software and Backend Developer<br />iobio</span>
+                  <div class="social">
+                    <a href="mailto:anders@anderspitman.net" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://twitter.com/anderspitman" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="https://github.com/anderspitman" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/anderspitman/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/yang.jpeg" alt="" /></div>
+                <div class="details">
+                  <h4>Yang Qi</h4>
+                  <span>Software Developer<br />iobio</span>
+                  <div class="social">
+                    <a href="mailto:qi.yang@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/YangQi007" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/yangqi007/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="pic"><img src="img/team/emerson.jpg" alt="" /></div>
+                <div class="details">
+                  <h4>Emerson Lebleu</h4>
+                  <span>Software Developer<br />iobio</span>
+                  <div class="social">
+                    <a
+                      href="mailto:emerson.lebleu@genetics.utah.edu"
+                      target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/emersonlebleu" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/emerson-lebleu-5b2754220/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="section-header">
+            <h2>Lab Alumni</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Gage Black</h4>
+                  <span>Bioinformatics Scientist<br />Teiko.bio</span>
+                  <div class="social">
+                    <a href="https://github.com/gageblack" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/gage-black/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Yi Qiao</h4>
+                  <span
+                    >Assistant Professor<br />U of Utah, 
+                    Biomedical Informatics</span
+                  >
+                  <div class="social">
+                    <a href="mailto:atrusqiao@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/yiq" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/yi-qiao-b9153928/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Niki Williams</h4>
+                  <span
+                    >Sr Manager, Software Test Engineering<br />bioMérieux</span
+                  >
+                  <div class="social">
+                    <a href="mailto:u1261876@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/nikola-williams-724b3018b"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Matt Velinder</h4>
+                  <span>Head of Bioinformatics<br />Frameshift Genomics</span>
+                  <div class="social">
+                    <a href="mailto:matt.velinder@utah.edu" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://twitter.com/PubSnips" target="_blank"
+                      ><i class="fa fa-twitter"></i
+                    ></a>
+                    <a href="https://github.com/mvelinder" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/matt-velinder/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Andrew Farrell</h4>
+                  <span
+                    >Senior Research Scientist<br />Oak Ridge National
+                    Laboratory</span
+                  >
+                  <div class="social">
+                    <a href="mailto:jandrewrfarrell@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a href="https://github.com/jandrewrfarrell" target="_blank"
+                      ><i class="fa fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Szabolcs Tarapcsak</h4>
+                  <span
+                    >Senior Data Scientist<br />Servier Pharmaceuticals</span
+                  >
+                  <div class="social">
+                    <a href="mailto:tarapcsakszabolcs@gmail.com" target="_blank"
+                      ><i class="fa fa-envelope"></i
+                    ></a>
+                    <a
+                      href="https://www.linkedin.com/in/szabolcs-tarapcs%C3%A1k-0aa606bb/"
+                      target="_blank"
+                      ><i class="fa fa-linkedin"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="member">
+                    <div class="details alumni">
+                        <h4>John Chamberlin</h4>
+                        <div class="social">
+                            <a href="https://github.com/johnchamberlin" target="_blank"><i class="fa fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/john-chamberlin-19a681155/" target="_blank"><i
+                                    class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Corin Thummel</h4>
+                  <span>Business Data Analyst<br />FLSmidth & Co.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Matthew Bailey</h4>
+                  <span>Assistant Professor<br />Brigham Young University</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Preetida Bhetariya</h4>
+                  <span
+                    >Bioinformatics Analyst / RA<br />Harvard School of Public
+                    Health</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="member">
+                <div class="details alumni">
+                  <h4>Erik Garrison</h4>
+                  <span
+                    >Postdoctoral Research Fellow<br />University of California,
+                    Santa Cruz</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========================== Contact Section ============================-->
+      <section id="contact" class="wow fadeInUp">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="contact-info-title">Contact</h2>
+            <p>
+              Our lab is part of the Utah Center for Genetic Discovery (UCGD)
+              and the Department of Human Genetics at the University of Utah
+            </p>
+          </div>
+
+          <div class="row contact-info">
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>Address</h3>
+                <address>15 N 2030 E, Salt Lake City, UT</address>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+155895548855">(801) 581-4422</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:marthlabutah@gmail.com"
+                    >marthlabutah@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mb-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12086.552533322238!2d-111.8339884!3d40.7699831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbc9ef33656b15944!2sUniversity+Of+Utah+Department+-Human+Genetics!5e0!3m2!1sen!2sus!4v1564591285367!5m2!1sen!2sus"
+            width="100%"
+            height="380"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/jquery/jquery-migrate.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+    <script src="lib/sticky/sticky.js"></script>
+
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+
+    <!-- Template Main Javascript File -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
