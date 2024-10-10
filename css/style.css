@@ -971,6 +971,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
+  justify-content: center;
 }
 
 #contact .contact-info i {
@@ -978,6 +979,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: inline-block;
   margin-bottom: 10px;
   color: var(--light);
+}
+
+#contact .contact-info .col-md-4 {
+    border-right: 1px solid var(--off-white);
+}
+
+#contact .contact-info .col-md-4:first-of-type {
+    border-left: 1px solid var(--off-white);
 }
 
 #contact .contact-info address,
