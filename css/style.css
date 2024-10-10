@@ -9,10 +9,12 @@
 # General
 --------------------------------------------------------------*/
 :root {
-    --light:#00b7ff;
-    --dark:#3037ff;
-    --darker:#081E5B;
+    --light:#638763;
+    --dark:#287628;
+    --darker:#215221;
+    --darkest: #143A14;
     --white:#fff;
+    --white-opacity:rgba(255, 255, 255, 0.9);
     --gray-darker:#333;
     --gray-dark:#444;
     --gray-mid:#555;
@@ -27,8 +29,9 @@ body {
 }
 
 a {
-  color: var(--light);
-  transition: 0.5s;
+  color: var(--dark);
+  transition: 0.25s;
+  border-bottom: transparent 2px solid;
 }
 
 a:hover,
@@ -37,6 +40,7 @@ a:focus {
   color: var(--dark);
   outline: none;
   text-decoration: none;
+  border-bottom: var(--dark) 2px solid;
 }
 
 p {
@@ -206,10 +210,14 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: var(--gray-mid);
+  color: var(--darker);
   margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
+  max-width: 1200px;
+  font-size: 60px;
+  line-height: 1.5;
+  /* font-weight: 600; */
+  border-radius: 10px;
+  padding: 20px 10px;
 }
 
 #intro .intro-content h2 span {
@@ -232,8 +240,8 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: var(--dark);
-  border: 2px solid var(--dark);
+  background: var(--light);
+  border: 2px solid var(--light);
 }
 
 #intro .intro-content .btn-get-started:hover {
@@ -242,13 +250,15 @@ h6 {
 }
 
 #intro .intro-content .btn-projects {
-  background: var(--light);
-  border: 2px solid var(--light);
+  background: var(--dark);
+  border: 2px solid var(--dark);
 }
 
 #intro .intro-content .btn-projects:hover {
   background: none;
-  color: var(--light);
+  color: var(--dark);
+  border: 2px solid var(--dark);
+  
 }
 
 #intro #intro-carousel {
@@ -257,7 +267,7 @@ h6 {
 
 #intro #intro-carousel::before {
   content: '';
-  background-color: rgba(255, 255, 255, 0.7);
+  background-image: radial-gradient(ellipse, var(--white-opacity) 40%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0) 100%);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -531,7 +541,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--light);
+  background: var(--darker);
   bottom: 0;
   left: 0;
 }
@@ -545,7 +555,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #software {
-  padding: 60px 0 30px 0;
+  padding: 60px 0 60px 0;
 }
 
 #software .about-img {
@@ -557,7 +567,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   max-width: 100%;
 }
 
-#software .content h2 {
+#software .content h2, #software .content h2 a {
   color: var(--dark);
   font-weight: 700;
   font-size: 36px;
@@ -583,7 +593,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #software .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--light);
+  color: var(--dark);
 }
 
 #software .content ul {
@@ -630,8 +640,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #research .box .icon i:before {
-  background: var(--dark);
-  background: linear-gradient(45deg, var(--light) 0%, var(--white) 100%);
+  background: linear-gradient(45deg, var(--darker) 0%, var(--light) 80%, var(--light) 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -751,81 +760,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transform: translate(-50%, -50%);
 }
 
-/* Testimonials Section
---------------------------------*/
-
-#testimonials {
-  padding: 30px 0;
-}
-
-#testimonials .testimonial-item {
-  box-sizing: content-box;
-  padding: 30px 30px 0 30px;
-  margin: 30px 15px;
-  text-align: center;
-  min-height: 350px;
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
-}
-
-#testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  border: 4px solid var(--white);
-  margin: 0 auto;
-}
-
-#testimonials .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-  color: black;
-}
-
-#testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: var(--gray-light);
-  margin: 0;
-}
-
-#testimonials .testimonial-item .quote-sign-left {
-  margin-top: -15px;
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
-}
-
-#testimonials .testimonial-item .quote-sign-right {
-  margin-bottom: -15px;
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
-  width: 37px;
-}
-
-#testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 auto 15px auto;
-}
-
-#testimonials .owl-nav,
-#testimonials .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#testimonials .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: var(--off-white);
-}
-
-#testimonials .owl-dot.active {
-  background-color: var(--light);
-}
-
 /* Meet Us Section
 --------------------------------*/
 
@@ -864,13 +798,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 3px solid var(--light);
 }
 
-/* Apply Section^M
+/* Apply Section
  * --------------------------------*/
 
 #apply {
-  background: var(--darker);
+  background: var(--darkest);
   background-size: cover;
-  padding: 40px 0;
+  padding: 60px 0;
 }
 
 #apply .apply-title {
@@ -908,7 +842,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team {
   background: var(--white);
-  padding: 30px 0 0 0;
+  padding: 60px 0 60px 0;
 }
 
 #team .member {
@@ -930,13 +864,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: var(--white);
   padding: 15px;
   border-radius: 0 0 3px 3px;
-}
-
-#team .member .details.alumni {
-  border-radius: 3px;
-  height: 100%;
-  min-height: 110px;
-  box-sizing: border-box;
 }
 
 #team .member h4 {
@@ -964,14 +891,65 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0 2px;
 }
 
+/* Alumni Section */
+
+#alumni {
+  background: var(--white);
+  padding: 60px 0 60px 0;
+}
+
+#alumni .member {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#alumni .member .details.alumni {
+    background: var(--light);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 3px;
+    height: 100%;
+    min-height: 110px;
+    box-sizing: border-box;
+}
+
+#alumni .member h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+}
+  
+#alumni .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+}
+
+#alumni .member .social {
+    margin-top: 5px;
+}
+
+#alumni .member .social a {
+    color: var(--white);
+}
+
+#alumni .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+}
+
 /* Contact Section
 --------------------------------*/
 
 #contact {
-  background: var(--darker);
+  background: var(--darkest);
   color: var(--white);
   background-size: cover;
   padding: 30px 0;
+}
+
+#contact .section-header p {
+  text-align: center;
 }
 
 #contact .contact-info-title {
@@ -1003,7 +981,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: var(--gray-light);
+  color: var(--off-white);
 }
 
 #contact .contact-info a {
@@ -1011,7 +989,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: var(--light);
+  color: var(--off-white);
+  border-bottom: var(--off-white) 2px solid;
 }
 
 #contact .contact-address,
@@ -1079,6 +1058,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"]:hover {
   background: var(--gray-light);
+}
+
+#contact iframe {
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
