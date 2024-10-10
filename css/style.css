@@ -10,6 +10,7 @@
 --------------------------------------------------------------*/
 :root {
     --light:#638763;
+    --lighter:#96DF96;
     --dark:#287628;
     --darker:#215221;
     --darkest: #143A14;
@@ -836,6 +837,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 3px solid var(--light);
 }
 
+#apply a {
+  color: var(--lighter);
+}
+
+#apply a:hover {
+  border-bottom: var(--lighter) 2px solid;
+}
+
 
 /* Our Team Section
 --------------------------------*/
@@ -857,6 +866,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #team .member .pic img {
   max-width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
 #team .member .details {
