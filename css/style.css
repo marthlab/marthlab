@@ -619,6 +619,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: var(--white);
   transition: 0.4s;
+  height: 95%;
+  box-sizing: border-box;
 }
 
 #research .box:hover {
