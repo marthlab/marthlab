@@ -634,7 +634,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #research .box .icon i {
   color: var(--gray-dark);
-  font-size: 64px;
+  font-size: 40px;
   transition: 0.5s;
   line-height: 0;
   margin-top: 34px;
@@ -648,7 +648,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #research .box h4 {
-  margin-left: 100px;
+  margin-left: 80px;
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 22px;
@@ -660,10 +660,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #research .box p {
   font-size: 14px;
-  margin-left: 100px;
   margin-bottom: 0;
   line-height: 24px;
+  text-align: justify;
+  color: var(--gray-mid);
 }
+
+#research .title .subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--dark);
+}
+
 
 /* Clients Section
 --------------------------------*/
